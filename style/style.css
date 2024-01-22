@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue";
+  font-family: "Roboto";
 }
 
 .page_container {
@@ -20,7 +20,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 52.5px;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
   padding-bottom: 44px;
   position: relative;
@@ -29,7 +29,8 @@ header {
 .home_title {
   display: flex;
   align-items: center;
-  margin-left: 70px;
+  margin-left: 100px;
+  cursor: pointer;
 }
 
 .title {
@@ -51,7 +52,7 @@ header {
 }
 
 .navbar_container {
-  margin-right: 56px;
+  margin-right: 100px;
 }
 
 .navbar_list {
@@ -71,10 +72,19 @@ header {
   color: rgba(0, 0, 0, 1);
 }
 
+.navbar_list li a:hover {
+  background-color: rgba(54, 121, 79, 0.55);
+}
+
 section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 100%;
+  height: 677px;
+}
+
+.left-side {
   width: 100%;
 }
 
@@ -88,13 +98,13 @@ section {
 .star {
   position: absolute;
   bottom: 55.16px;
-  left: 36px;
+  left: 90px;
 }
 
 .spinner {
   position: absolute;
   right: 84px;
-  top: 167px;
+  top: 163px;
 }
 
 .social-media {
@@ -109,6 +119,7 @@ section {
 
 .fa-brands {
   font-size: 26px;
+  cursor: pointer;
 }
 
 .fa-instagram {
@@ -118,26 +129,27 @@ section {
 }
 
 .line {
-  position: relative;
+  position: absolute;
   display: inline-block;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
   width: 173px;
   transform: rotate(90deg);
-  top: 81px;
-  left: 10px;
+  top: 534px;
+  right: 21px;
 }
 
 .right-side {
-  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  align-items: self-end;
+  justify-content: flex-start;
+  margin-right: 274px;
+  margin-top: 4px;
+  width: 100%;
+  height: 100%;
 }
 
 .text-info h1 {
-  font-family: "Helvetica";
   font-size: 44px;
   font-weight: 700;
   line-height: 53.72px;
@@ -147,7 +159,6 @@ section {
 }
 
 .info {
-  font-family: "Helvetica";
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -169,10 +180,199 @@ section {
   border-radius: 10px;
   background-color: rgba(1, 96, 27, 1);
   color: rgba(255, 255, 255, 1);
-  font-family: "Helvetica Neue";
   font-size: 18px;
   font-weight: 500;
   line-height: 21.98px;
   letter-spacing: 0em;
   border-style: none;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 93.16px;
+  width: 100%;
+
+  padding-left: 68px;
+  padding-right: 68px;
+}
+
+.card-title {
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 42px;
+  letter-spacing: 0em;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70.27px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 37.3px;
+  height: 634.46;
+}
+
+.card {
+  width: 368.05px;
+  height: 317.23px;
+  border-radius: 10px;
+
+  overflow: hidden;
+  border: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  cursor: pointer;
+  animation: instantAnimation 1.2s infinite;
+}
+
+.card-img {
+  width: 368.05px;
+  height: 280.42px;
+  object-fit: cover;
+}
+
+.card-info {
+  background-color: rgba(54, 121, 79, 0.55);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  margin-left: 13.23px;
+  font-size: 19px;
+  font-weight: 200;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+}
+
+.price {
+  margin-right: 35.76px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+}
+
+footer {
+  background-color: #255338;
+  width: 100%;
+  margin-top: 141.97px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.foo-title {
+  margin-left: 74px;
+
+  margin-top: 36px;
+}
+
+.footer_title {
+  font-family: "Manrope";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: 0em;
+  color: #fbfbfb;
+}
+
+.title-strong {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  color: #fbfbfb;
+}
+
+.info-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 76px;
+  margin-top: 55px;
+}
+
+.company {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.company-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 18px;
+  gap: 6px;
+  justify-content: center;
+}
+.company h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.company-nav span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.privacy {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 60px;
+  padding-top: 23px;
+  padding-bottom: 21px;
+  gap: 20px;
+  border-top: 1px solid #ffffff;
+  margin-top: 174px;
+}
+
+.privacy span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+@keyframes instantAnimation {
+  to {
+    transform: scale(1.2);
+  }
 }
